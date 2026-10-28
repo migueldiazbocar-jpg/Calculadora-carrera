@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cronómetro con zapatilla. Lienzo 108x108, zona segura central 66x66. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Corona y botón del cronómetro -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M42,24h8v5h-8z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M58.5,31.5l3.5,-3.5l3,3l-3.5,3.5z" />
+
+    <!-- Esfera -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:pathData="M28,48a18,18 0,1 0,36 0a18,18 0,1 0,-36 0" />
+
+    <!-- Aguja -->
+    <path
+        android:strokeColor="@color/icon_red"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M46,48L46,36" />
+    <path
+        android:fillColor="@color/icon_red"
+        android:pathData="M43.5,48a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0" />
+
+    <!-- Zapatilla (con contorno del color de fondo para separarla de la esfera) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="@color/ic_launcher_background"
+        android:strokeWidth="2.5"
+        android:strokeLineJoin="round"
+        android:pathData="M52,73L60,64L66,66.5L70,62.5L75,65.5L79,71L84,73L84,79L52,79Z" />
+    <!-- Suela -->
+    <path
+        android:fillColor="@color/icon_red"
+        android:pathData="M53.5,76h29v2h-29z" />
+</vector>
